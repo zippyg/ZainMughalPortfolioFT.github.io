@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #003E74; /* Imperial College blue */
+  color: #e0e0e0;
+  padding: 10px;
+}
+
+header ul, footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+header ul li, footer ul li {
+  margin: 0 10px;
+}
+
+header ul li a, footer ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1E1E1E;
+  border-radius: 5px;
+}
+
+.project-card {
+  background-color: #2E2E2E;
+  padding: 20px;
+  border: 1px solid #003E74;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
