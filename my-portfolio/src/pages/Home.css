@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header, footer {
+    background-color: #003E74; /* Imperial College blue */
+    color: #e0e0e0;
+    padding: 10px;
+  }
+  
+  header ul, footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  header ul li, footer ul li {
+    margin: 0 10px;
+  }
+  
+  header ul li a, footer ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  main {
+    flex: 1;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 5px;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .profile-container img {
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+  }
+  
+  .profile-container .headshot {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .profile-container .university-logo {
+    max-height: 100px;
+  }
+  
