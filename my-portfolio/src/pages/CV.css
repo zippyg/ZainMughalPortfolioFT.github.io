@@ -1,15 +1,13 @@
-.pdf-container {
-    width: 100%;
-    height: 90vh;
-    overflow: auto;
-  }
-  
-  .react-pdf__Document {
+.cv-image-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
   
-  .react-pdf__Page {
-    margin: 20px 0;
+  .cv-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
   

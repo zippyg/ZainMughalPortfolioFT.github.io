@@ -1,13 +1,17 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import { motion } from 'framer-motion';
+import './AnimatedSection.css';
 
-const AnimatedSection = ({ children }) => {
-  const props = useSpring({
-    from: { opacity: 0, transform: 'translate3d(0,40px,0)' },
-    to: { opacity: 1, transform: 'translate3d(0,0,0)' },
-  });
-
-  return <animated.section style={props}>{children}</animated.section>;
-};
+const AnimatedSection = () => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="animated-section"
+  >
+    <h2>Animated Section</h2>
+    <p>This is an animated section using framer-motion.</p>
+  </motion.div>
+);
 
 export default AnimatedSection;
